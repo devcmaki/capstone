@@ -1,0 +1,361 @@
+.another-post{
+  background-color: white;
+  height: 25vh;
+  margin-left: 26.5%;
+  margin-right: 26.5%;
+  margin-top: 10px;
+  display: flex;
+}
+
+.body{
+  background-color: #314528;
+  height: 100%;
+  }
+
+.input-post{
+  height: 150px;
+  width: 650px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 0.5%;
+  margin-top: 3%;
+  justify-content: center;
+  align-items: center;
+}
+
+.navbar{
+  background-color: #81a969;
+  margin: 10px;
+  height: 65px;
+  position: fixed;
+}
+
+.logout {
+  display: flex;
+  font-size: 16px;  
+  color: black;
+  align-items: center;
+  text-decoration: none;
+  padding-left: 1300px;
+  padding: 2px;
+}
+
+.logout:hover {
+  color: #314528;
+}
+
+/* Post options */
+
+.post-options {
+  display: flex;
+  justify-content: space-between;
+}
+
+
+.post-options a {
+  padding: 5px;
+  text-decoration: none;
+}
+
+.left {
+  align-items: left;
+  color: black;
+  margin-left: 7%;
+}
+
+.middle {
+  text-align: center;
+  color: black
+}
+
+.right {
+  text-align: right;
+  color: black;
+  margin-right: 7%;
+  margin-bottom: 3%;
+}                         /* Post Options */
+
+.post-section{
+  background-color: white;
+  height: 25vh;
+  margin-left: 26.5%;
+  margin-right: 26.5%;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Posts/Feed */
+
+.post {
+  background-color: white;
+  height: 35vh;
+  margin-left: 26.5%;
+  margin-right: 26.5%;
+  margin-top: 10px;
+  display: flex;
+}
+
+.sidebar-left {
+  background-color: white;
+  height: 100vh;
+  width: 25%;
+  position: fixed;
+  margin-left: 10px;
+  top: 95px;
+}
+
+.leaderboard {
+  background-color: white;
+  height: 25vh;
+  width: 25%;
+  position: fixed;
+  right: 10px;
+  top:95px;
+}
+
+.leaderboard h3 {
+  margin-top: 5px;
+  margin-left: 10px;
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 30px;
+}
+
+.faq {
+  background-color: white;
+  height: 70vh;
+  width: 25%;
+  position: fixed;
+  right: 10px;
+  top: 290px;
+}
+
+.faq h3 {
+  font-family: 'Times New Roman', Times, serif;
+  margin-left: 10px;
+  margin-top: 5px;
+}
+
+.post-tags {
+  color: #666666;
+  margin-left: 65%;
+  margin-top: 20%;
+}
+
+.post-footer {
+  display: flex;
+}
+
+.vote {
+  color: black;
+  text-decoration: none;
+  text-align: left;
+}
+
+.response {
+  color: black;
+  text-decoration: none;
+}
+
+/* Search bar */
+
+.container {
+  display: flex;
+}
+
+.search-container {
+  display: flex;
+  align-items: center;
+  border: 2px solid black;
+  border-radius: 4px;
+  padding: 5px;
+  background-color: white;
+  width: 600px; 
+  position: absolute;
+  left:50%;
+      transform: translateX(-50%);
+}
+
+.search-container input {
+  border: none;
+  outline: none;
+  padding: 5px;
+  font-size: 16px;
+  width: 100%; 
+}
+
+/* Forum and Collaborate Button */
+
+.custom-button {
+  display: block;
+  flex-direction: column;
+  width: 200px; 
+  line-height: 50px;
+  margin-top: 10%;
+  
+}
+
+.top-section, .bottom-section {
+  width: 150%;
+  padding: 10px;
+  font-size: 24px;
+  border: 2px solid black;
+  cursor: pointer; 
+  margin-left: 40.8%;
+}
+
+.top-section {
+  background-color: #6c8e57; 
+  color: black;
+}
+
+.top-section:hover {
+  background-color: #314528;
+  color: black;
+}
+
+.bottom-section {
+  background-color: white;
+  color: black;
+}
+
+.bottom-section:hover {
+  background-color: #314528;
+}
+
+.profile-container {
+  position: relative;
+  width: 150px;
+  height: 150px;
+  margin-left: 85px;
+  margin-top: 30px;
+}
+
+.profile-picture {
+  position: relative;
+  width: 75%;
+  height: 75%;
+  border-radius: 50%;
+  overflow: hidden;
+  cursor: pointer;
+  border: 2px solid black;
+}
+
+.profile-picture img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.overlay .camera-icon {
+  font-size: 2em;
+}
+
+.overlay .choose-text {
+  margin-top: 15px;
+  font-size: 11px;
+  color: black;
+  text-align: center;
+}
+
+.profile-picture:hover .overlay {
+  opacity: 1;
+}
+
+
+
+/* Modal */
+.modal {
+  display: flex;
+  position: fixed;
+  z-index: 1000;
+  height: 100vh;
+  width: 100vw;
+  justify-content: left;
+  align-items:baseline;
+  padding-left: 50px;
+  padding-right: 50px;
+  padding-top: 19%;
+  background-color: rgba(147, 165, 141, 0.512);
+}
+
+.modal-content p {
+  margin-bottom: 20px;
+  font-size: 16px;
+}
+
+.modal-content {
+  background-color: white;
+  padding: 15px;
+  border-radius: 5px;
+  text-align: center;
+  width: 100px;  /* modal width */
+  max-width: 22%; 
+  margin-right: 10px;
+}
+
+.modal-content button {
+  margin: 5px;
+  padding: 10px 5px;
+  border: none;
+  cursor: pointer;
+}
+
+#save-btn {
+  background-color: #81a969;
+  color: white;
+  
+}
+
+#cancel-btn {
+  background-color: #941925;
+  color: white;
+}
+
+/* Notification Icon & Popup */
+
+.notification-icon {
+  margin-left: 880px;
+  margin-right: 100px;
+  font-size: 24px;
+  text-decoration: none;
+  color: black;
+  cursor: pointer;
+  z-index: 1001;
+}
+
+.notification_dd {
+  display: none;
+  position: absolute;
+  top: 64px; /* Adjust this based on the icon's position */
+  right: 300px; /* Adjust to match your layout */
+  background-color: #6c8e57;
+  width: 300px;
+  padding: 200px;
+  z-index: 1000; /* Ensure it's above other content */  
+}
+
+.notification_dd::before {
+  content: "";
+  position: absolute;
+  top: -10px; /* Position triangle above the dropdown */
+  right: 105px; /* Adjust to align with your icon */
+  border-width: 0 10px 10px 10px;
+  border-style: solid;
+  border-color: transparent transparent #6c8e57 transparent; /* Triangle color */
+  z-index: 1001;
+}

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My First React Example</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/react/18.2.0/umd/react.production.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/react-dom/18.2.0/umd/react-dom.production.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-standalone/7.21.0/babel.min.js"></script>
+    <style>
+      body {
+        margin: 0;
+        font-family: Arial, sans-serif;
+      }
+      .Body {
+        display: flex;
+        flex-direction: column;
+        height: 100vh;
+      }
+      .Comms {
+        background-color: #f0f0f0;
+        padding: 10px;
+      }
+      .CodeEditor {
+        flex: 1;
+        padding: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="text/babel">
+      const CodeEditor = () => {
+        return (
+          <textarea
+            style={{
+              width: "100%",
+              height: "100%",
+              fontSize: "16px",
+              fontFamily: "monospace",
+            }}
+            placeholder="Write your code here..."
+          />
+        );
+      };
+
+      const LanguageSelector = () => {
+        return (
+          <select style={{ padding: "5px", margin: "10px 0" }}>
+            <option value="javascript">JavaScript</option>
+            <option value="python">Python</option>
+            <option value="java">Java</option>
+          </select>
+        );
+      };
+
+      const App = () => {
+        return (
+          <div className="Body">
+            <div className="Comms">
+              <LanguageSelector />
+            </div>
+            <div className="CodeEditor">
+              <CodeEditor />
+            </div>
+          </div>
+        );
+      };
+
+      ReactDOM.createRoot(document.getElementById("root")).render(<App />);
+    </script>
+  </body>
+</html>

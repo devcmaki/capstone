@@ -1,0 +1,30 @@
+.body{
+  background-color: #314528;
+  height: 100%;
+  }
+
+  .navbar{
+    background-color: #81a969;
+    margin: 10px;
+  }
+
+  .profile {
+    background-color: #81a969;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    right: 10px;
+    left: 26.5%;
+    bottom: 0px;
+    top: 80px;
+  }
+
+  .sidebar-left {
+  background-color: white;
+  width: 25%;
+  position: fixed;
+  margin-left: 10px;
+  bottom: 0px;
+  top: 80px;
+}
